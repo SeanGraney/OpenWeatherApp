@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/afternoon"
+    android:layout_width="match_parent"
+    android:layout_height="245dp">
+
+    <TextView
+        android:id="@+id/highLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="64°F/61°F"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayDate3" />
+
+    <TextView
+        android:id="@+id/precipitation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(0% precip.)"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description2" />
+
+    <TextView
+        android:id="@+id/morningTemp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="61°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nightTemp2"
+        app:layout_constraintStart_toEndOf="@+id/nightTemp2" />
+
+    <TextView
+        android:id="@+id/dayDate3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#8064ec "
+        android:paddingLeft="8dp"
+        android:text="Day, Date"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/uvIndex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="UV Index: 2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precipitation2" />
+
+    <TextView
+        android:id="@+id/eveningTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="61°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dayTemp2"
+        app:layout_constraintStart_toEndOf="@+id/dayTemp2" />
+
+    <TextView
+        android:id="@+id/dayTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="61°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/morningTemp3"
+        app:layout_constraintStart_toEndOf="@+id/morningTemp3" />
+
+    <TextView
+        android:id="@+id/nightTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="61°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uvIndex2" />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Scattered Clouds"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highLow" />
+
+    <TextView
+        android:id="@+id/morningtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/_8am"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nightTemp2" />
+
+    <TextView
+        android:id="@+id/afternoontime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="@string/_1pm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/morningtime"
+        app:layout_constraintStart_toEndOf="@+id/morningtime" />
+
+    <TextView
+        android:id="@+id/eveningtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:text="@string/_5pm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/morningtime"
+        app:layout_constraintStart_toEndOf="@+id/afternoontime" />
+
+    <TextView
+        android:id="@+id/nighttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:text="@string/_11pm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/morningtime"
+        app:layout_constraintStart_toEndOf="@+id/eveningtime" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayDate3"
+        app:srcCompat="@drawable/_01d" />
+</androidx.constraintlayout.widget.ConstraintLayout>
